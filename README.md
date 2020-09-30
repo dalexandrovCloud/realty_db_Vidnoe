@@ -15,38 +15,38 @@
 и инкрементально загружает их в локальную базу данных. После каждого запуска в
 базе данных актуализируется информация по текущим изменениям на сервисе (добавляет 
 новые, отмечает удаленные и измененные объявления) и сохраняет в .json файлах перечень
-добавленных объявлений, объявлений где снизилась стоимость квартир, перечень городов
+добавленных объявлений, объявлений, где снизилась стоимость квартир, перечень городов,
 недвижимость в которых подорожала.
 
 
 # Инструкция по установке и запуску приложения
 
-1. создать на локальном диске папку (не использовать в названии кириллицу, спец. символы (кроме _ и - ) и пробелы)
+1. создать на локальном диске папку (не использовать в названии кириллицу, спец. символы (кроме "_" и "-" ) и пробелы)
 
 
-2. открыть командную строку от имени администратора и перейти в созданную папку:
-
-```console
-$ cd your path
-```
-
-3. активировать в открывшейся папке GIT командой:
+2. открыть приложение "командная строка" от имени администратора и перейти в созданную папку:
 
 ```console
-$ your path> git init
+> cd your path
 ```
-если GIT не создаст папку .git - неодходимо перейти по ссылке https://git-scm.com/downloads и установить GIT для вашей OS 
+
+3. активировать GIT в открывшейся папке командой:
+
+```console
+your path> git init
+```
+если GIT не создаст папку .git - необходимо перейти по ссылке https://git-scm.com/downloads и установить GIT для вашей OS 
 
 4. скачиваем приложение с GitHub командой:
 
 ```console
-$ your path> git clone https://github.com/dalexandrovCloud/realty_db_Vidnoe.git
+your path> git clone https://github.com/dalexandrovCloud/realty_db_Vidnoe.git
 ```
 
 5. устанавливаем необходимые для работы приложения пакеты командой:
 
 ```console
-$ your path> pip install -r req.txt
+your path> pip install -r req.txt
 ```
 
 6. устанавливаем виртуальное окружение Python командой:
@@ -54,36 +54,36 @@ $ your path> pip install -r req.txt
 для WIN...............................
 
 ```console
-$ your path> python -m venv env
+your path> python -m venv env
 ```
 
 и запускаем его командой:
 
 ```console
-$ your path> env/Scripts/activate
+your path> env/Scripts/activate
 ```
 
 для MacOS.............................
 
 ```console
-$ your path> python3 -m venv env
+your path> python3 -m venv env
 ```
 
 и запускаем его командой:
 
 ```console
-$ your path> source env/bin/activate
+your path> source env/bin/activate
 ```
 
 7. запускаем приложение командой:
 
 ```console
-$ your path> python main.py
+your path> python main.py
 ```
 
 8. запускаем интернет браузер и в адресную строку вставляем адрес из окна терминала:
 
-http://127.0.0.1:5000/api/get_data_by_city/lenisk-reg
+http://127.0.0.1:5000 + /api/get_data_by_city/lenisk-reg
 
 9. файлы с результатами и база данных сохранятся в папке с приложением
 
